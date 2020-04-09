@@ -3,11 +3,10 @@ package dev.dao;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.stereotype.Component;
-
 import dev.entite.Plat;
 
-//@Component
+//@Repository
+//@Profile("memoire")
 public class PlatDaoMemoire implements IPlatDao {
 
     private List<Plat> listePlats = new ArrayList<>();
