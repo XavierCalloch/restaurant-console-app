@@ -1,16 +1,21 @@
 package dev.service;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Repository;
+
 import dev.dao.IPlatDao;
 import dev.entite.Plat;
 import dev.exception.PlatException;
 
-import java.util.List;
-
+//@Component
+@Repository
 public class PlatServiceVersion1 implements IPlatService {
 
-    private IPlatDao dao;
+	private IPlatDao dao;
 
-    public PlatServiceVersion1(IPlatDao dao) {
+	public PlatServiceVersion1(@Qualifier("platDaoFichier")IPlatDao dao) {
         this.dao = dao;
     }
 

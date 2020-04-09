@@ -1,5 +1,11 @@
 package dev.ihm;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+
+import org.springframework.stereotype.Repository;
+
 import dev.exception.PlatException;
 import dev.ihm.options.IOptionMenu;
 import dev.ihm.options.OptionAjouterPlat;
@@ -7,10 +13,8 @@ import dev.ihm.options.OptionListerPlats;
 import dev.ihm.options.OptionTerminer;
 import dev.service.IPlatService;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-
+//@Component
+@Repository
 public class Menu {
 
     private Map<Integer, IOptionMenu> actions = new HashMap<>();
