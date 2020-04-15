@@ -9,7 +9,7 @@ import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder;
 import org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType;
 
 @Configuration
-@ComponentScan("dev.dao")
+@ComponentScan({ "dev.dao", "dev.repository" })
 public class DataSourceH2TestConfig {
 
 	@Bean
